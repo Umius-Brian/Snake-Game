@@ -3,6 +3,20 @@ $(document).ready(function() {
   let apple = new Apple($('#board'));
   let body = new Body($('#board'));
 
+  function run(interval, frames) {
+    let int = 1;
+    
+    function func() {
+        document.body.id = "b"+int;
+        int++;
+        if(int === frames) { int = 1; }
+    }
+    
+    const swap = window.setInterval(func, interval);
+}
+
+run(1000, 10);
+
   let keyDownEvents = [];
   $('body').on('keydown', function(e) {
     keyDownEvents.push(e);
