@@ -76,6 +76,7 @@ class Head {
     } else {
       window.alert("DUN GOOFED");
       window.open("https://coronavirus.jhu.edu/map.html");
+      location.reload(true);
     }
   }
 }

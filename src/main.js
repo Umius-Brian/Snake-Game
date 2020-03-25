@@ -106,3 +106,6 @@ run(1000, 10);
 
   // checkRecursively();
 });
+
+
+console.log("HELLO")
